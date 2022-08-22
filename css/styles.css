@@ -510,7 +510,7 @@ color: var(--button-color);
     height: 44px;
     border-radius: 50%;
     color: var(--icon-color);
-    transition-property: color;
+    transition-property: color, background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -573,15 +573,15 @@ background-image: url(../img/instagram\ 2.svg);
     border-radius: 4px;
     align-items: center;
     justify-content: center;
-    transition-property: color;
+    transition-property: color, border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-icon {
     fill: currentColor;
-    transition-property: color;
+    /* transition-property: color;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .clients-link:hover,
@@ -700,11 +700,13 @@ background-image: url(../img/instagram\ 2.svg);
     color: var(--button-color);
     background-color: rgba(255, 255, 255, 0.1);
     border: 1px solid var(--icon-color);
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-link:hover,
 .footer-social-link:focus {
-    color: var(--button-color);
     background-color: var(--accent-color);
 }
 
@@ -742,7 +744,10 @@ background-image: url(../img/instagram\ 2.svg);
     letter-spacing: var(--letter-spacing);
     padding: 6px 22px;
     border-radius: 4px;
-    
+    transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-btn:hover, .portfolio-btn:focus {
@@ -764,6 +769,7 @@ background-image: url(../img/instagram\ 2.svg);
     line-height: 1.63;
     cursor: pointer;
     font-family: inherit;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-project {
